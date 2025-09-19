@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+    //একটা ভ্যারিয়েবল বানাও num = 0। if-else দিয়ে চেক করো এটা truthy নাকি falsy।
+
+
+
+let num =0;
+
+
+
+if(num){
+
+    console.log("true");
+}
+else{
+
+    console.log("false")
+}
+
+//output: false
+
+
+//একটা ভ্যারিয়েবল বানাও str = "javascript"। if-else দিয়ে চেক করো truthy না falsy।
+
+const str = "javascript";
+
+if(str){
+    console.log("true");
+}
+else{
+    console.log("false");
+}
+
+//output: true;
+
+
+
+//একটা ভ্যারিয়েবল বানাও value = null। চেক করো truthy না falsy।
+
+const value = null;
+
+if(value){
+    console.log("true");
+}
+else{
+    console.log("false");
+}
+
+//output: false;
+
+
+//একটা খালি array [] চেক করো if-else এর মধ্যে truthy না falsy।
+
+const array = [];
+
+if(array){
+    console.log("true")
+}
+else{
+    console.log("false")
+}
+//output: true;
+
+
+//একটা খালি object {} চেক করো truthy না falsy।
+
+const object={};
+
+if(object){
+    console.log("true");
+}
+else{
+    console.log("false");
+}
+
+//output: true;
+
+
+//"0" (string) আর 0 (number) আলাদা করে চেক করো কোনটা truthy আর কোনটা falsy।
+
+const strNum = "0";
+
+
+if(strNum){
+    console.log("true");
+}
+else{
+    console.log("false");
+}
+
+//output: true;
+
+
+//নিচের ভ্যারিয়েবলগুলো আলাদা করে if-else এ চেক করো:
+
+//undefined
+
+//NaN
+
+//" " (একটা space দেওয়া string)
+
+const undef=undefined;
+
+if(undef){
+    console.log("true");
+}
+else{
+    console.log("false");
+}
+
+//output: false;
+
+
+const notANumber = NaN;
+
+if(notANumber){
+console.log("true");
+}
+else{
+    console.log("false");
+
+}
+//output: false;
+
+//একটা space দেওয়া string
+
+const spaceStr = " ";
+
+if(spaceStr){
+    console.log("true");
+}
+else{
+    console.log("false");
+}
+
+//output: true;
+
+</script>
+</body>
+</html>
