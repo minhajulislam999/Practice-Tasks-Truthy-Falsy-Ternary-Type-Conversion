@@ -143,6 +143,139 @@ else{
 
 //output: true;
 
+
+
+//🔹 Ternary Operator Practice Tasks
+
+
+
+
+//একটা ভ্যারিয়েবল age = 18। ternary ব্যবহার করে চেক করো → যদি বয়স ১৮ বা তার বেশি হয় "adult" না হলে "minor"।
+
+const age = 18;
+
+age >= 18 ? console.log("adult"): console.log("minor");
+
+//output: adult;
+
+
+
+
+//একটা ভ্যারিয়েবল marks = 40। ternary ব্যবহার করে "pass" না হলে "fail" প্রিন্ট করো।
+
+const marks = 40;
+
+marks >= 40 ? console.log("pass") : console.log("fail");
+
+//output: pass;
+
+
+
+//একটা ভ্যারিয়েবল num = -5। ternary দিয়ে চেক করো → যদি positive হয় "positive" না হলে "negative"।
+
+
+const number = 5;
+
+number ? console.log("positive"): console.log("negative");
+
+
+//output: positive;
+
+
+// 🔎 ছোট একটা জায়গায় উন্নতি দরকার:
+
+// এই অংশে 👇
+
+// const number = 5;
+// number ? console.log("positive") : console.log("negative");
+
+
+// 👉 এখানে তুমি শুধু number চেক করেছো। JavaScript-এ 5 truthy, তাই সবসময় "positive" প্রিন্ট হবে।
+// কিন্তু task ছিল positive না negative চেক করা।
+// তাহলে এভাবে করতে হবে:
+
+// number >= 0 ? console.log("positive") : console.log("negative");
+
+
+//একটা ভ্যারিয়েবল isLoggedIn = true। ternary দিয়ে "Welcome User" অথবা "Please Login" প্রিন্ট করো।
+
+const isLoggedIn = true;
+isLoggedIn ? console.log("welcome user"): console.log("please login");
+
+//output: welcome user;
+
+
+//একটা ভ্যারিয়েবল day = "friday"। ternary দিয়ে চেক করো → যদি day "friday" হয় "Weekend" না হলে "Working Day"।
+
+const day = "friday";
+
+day === "friday" ? console.log("weekend"): console.log("working day");
+
+//output: weekend;
+
+
+
+//একটা ভ্যারিয়েবল score = 85। ternary দিয়ে → ৮০ বা তার বেশি হলে "A grade" না হলে "B grade"।
+
+const score = 85;
+
+score >= 80 ? console.log("A grade"): console.log("B grade");
+
+//output: A grade;
+
+
+
+//একটা ভ্যারিয়েবল isMember = false। ternary দিয়ে → যদি member হয় "Discount Applied" না হলে "No Discount"।
+
+
+const isMember = false;
+
+isMember ? console.log("Discount Applied"): console.log("No Discount");
+
+
+//output: No Discount;
+
+
+
+//একটা ভ্যারিয়েবল x = 0। ternary দিয়ে চেক করো "its truthy" বা "its falsy"।
+
+
+const x = 0;
+
+x ? console.log("its truthy"): console.log("its falsy");
+
+
+//output: its falsy;
+
+
+
+//একটা ভ্যারিয়েবল number = 7। ternary দিয়ে চেক করো → even হলে "Even" না হলে "Odd"।
+
+
+const number1 = 7;
+
+number1 % 2 === 0 ? console.log("Even"): console.log("Odd")
+
+//output: Odd;
+
+
+
+//একটা ভ্যারিয়েবল balance = 0। ternary দিয়ে চেক করো → balance > 0 হলে "Valid Balance" না হলে "Insufficient Balance"।
+
+const balance = 0;
+
+balance > 0 ? console.log("Valid Balance"): console.log("Insufficient Balance");
+
+
+//output: Insufficient Balance;
+
+
+
+// ⭐ Suggestion:
+
+// তুমি চাইলে সবগুলো একসাথে console.log(...) এর ভেতর ternary লিখতে পারো, যেমন:
+
+// console.log(age >= 18 ? "adult" : "minor");
 </script>
 </body>
 </html>
