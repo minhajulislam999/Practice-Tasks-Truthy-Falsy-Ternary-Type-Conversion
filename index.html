@@ -390,6 +390,101 @@ console.log(!arr);
 const obj = {};
 
 console.log(!obj);
+
+//output: false;
+
+
+
+//🔹 Function Call – Ternary Operator Practice Tasks
+
+
+//একটা ভ্যারিয়েবল isMorning থাকবে। যদি true হয় তাহলে greetMorning() ফাংশন কল হবে, না হলে greetNight() ফাংশন কল হবে।
+
+
+const isMorning = true;
+
+
+greetMorning = () =>console.log("Good Morning");
+
+greetNight = () =>console.log("Good Night");
+
+isMorning ? greetMorning() : greetNight();
+
+
+//output: Good Morning;
+
+
+//একটা ভ্যারিয়েবল isAdmin থাকবে। যদি true হয় তাহলে adminPanel() ফাংশন কল হবে, না হলে normalUser() ফাংশন কল হবে।
+
+
+const isAdmin = false;
+
+adminPanel = () => console.log("Welcome to Admin Panel");
+
+normalUser = () => console.log("Welcome Normal User");
+
+
+isAdmin ? adminPanel() : normalUser();
+
+
+//output: Welcome to Normal User;
+
+
+
+//একটা ভ্যারিয়েবল hasPermission থাকবে। যদি true হয় তাহলে accessGranted() ফাংশন কল হবে, না হলে accessDenied() ফাংশন কল হবে।
+
+
+const hasPermission = true;
+
+accessGranted = () => console.log("Access Granted");
+
+accessDenied = () => console.log("Access Denied");
+
+hasPermission ? accessGranted() : accessDenied();
+
+
+//output: Access Granted;
+
+
+
+//একটা ভ্যারিয়েবল isLoggedIn থাকবে। যদি true হয় তাহলে showDashboard() ফাংশন কল হবে, না হলে showLoginPage() ফাংশন কল হবে।
+
+
+const isLoggedIn2 = true;
+
+showDashboard = () => console.log("Welcome to Dashboard");
+
+showLoginPage = () => console.log("Please Login to Continue");
+
+isLoggedIn2 ? showDashboard() : showLoginPage();
+
+//output: Welcome to Dashboard;
+
+
+//একটা ভ্যারিয়েবল isRainy থাকবে। যদি true হয় তাহলে takeUmbrella() ফাংশন কল হবে, না হলে enjoySunshine() ফাংশন কল হবে।
+
+
+const isRainy = false;
+
+takeUmbrella = () => console.log("Take an Umbrella"); 
+
+enjoySunshine = () => console.log("Enjoy the Sunshine");
+
+isRainy ? takeUmbrella() : enjoySunshine();
+
+//output: Enjoy the Sunshine;
+
+
+
+
+
+
+// 👉 তবে একটা ছোট সাজেশন: ফাংশন ডিফাইন করার সময় const বা function ব্যবহার করলে কোড আরও ক্লিন হবে। যেমন:
+
+// const greetMorning = () => console.log("Good Morning");
+// এতে করে ভ্যারিয়েবল greetMorning অন্য কোথাও দুর্ঘটনাবশত পরিবর্তন হবে না।
+
+
 </script>
 </body>
 </html>
